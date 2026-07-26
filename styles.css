@@ -1,0 +1,58 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, sans-serif;
+  color: black;
+  background-color: rgb(80, 80, 80);
+}
+
+
+main {
+  padding: 1rem;
+}
+
+
+@keyframes jump {
+  0%   { transform: translateY(0); }
+  30%  { transform: translateY(-30px); }
+  55%  { transform: translateY(0); }
+  75%  { transform: translateY(-8px); }
+  100% { transform: translateY(0); }
+}
+
+img.jump {
+  animation: jump 0.4s ease-out;
+}
+
+@keyframes shake {
+  0%   { transform: translateX(0); }
+  10%  { transform: translateX(-8px)};
+  20%  { transform: translateX(8px)};
+  30%  { transform: translateX(-8px)};
+  40%  { transform: translateX(8px)};
+  50%  { transform: translateX(-8px)};
+  60%  { transform: translateX(8px)};
+  70%  { transform: translateX(-8px)};
+  80%  { transform: translateX(8px)};
+  90%  { transform: translateX(-8px)};
+  100%  { transform: translateX(8px)};
+
+}
+
+img.shake {
+  animation: shake 0.5s ease-out;
+}
+
+#kayobox{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#kayo{
+  width: 340px;
+  height: 922px;
+}
